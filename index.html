@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <title>Form</title>
+    </head>
+    <body>
+        <h1 class="visible-title">Fill out of the form</h1>
+        <div id="container">
+            <form action="" class="form-elements">
+                <label for="text">First name<span class="required">*</span></label>
+                <input type="text" id="text" class="form-element" required />
+                <label for="email">Your email<span class="required">*</span></label>
+                <input type="email" id="email" class="form-element" required />
+                <label for="tel">Your phone number</label>
+                <input type="tel" id="tel" class="form-element" />
+                <label for="select">Select your country</label>
+                <select name="select" id="select" class="form-element">
+                    <option value="Ukraine">Ukraine</option>
+                    <option value="Sweden">Sweden</option>
+                    <option value="France">France</option>
+                </select>
+                <label for="radio">I want to attend event:<span class="required">*</span></label>
+                <div>
+                    <input type="radio" class="online" name="radio" value="online" checked>
+                    <label for="online">Online</label>
+                </div>
+                <div>
+                    <input type="radio" class="offline" name="radio" value="offline">
+                    <label for="offline">Offline</label>
+                </div>
+                <label for="textarea" class="textarea-lbl">Comments:</label>
+                <textarea name="textarea" class="textarea"></textarea>
+                <input type="checkbox" id="checkbox">
+                <label for="checkbox">I agree with <a href="#" class="link">Privacy Policy</a><span class="required">*</span></label>
+                <div>
+                    <input type="reset" class="reset"/>
+                    <button type="submit" class="submit">Отправить</button>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
